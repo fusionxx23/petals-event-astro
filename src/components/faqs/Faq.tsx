@@ -9,7 +9,7 @@ export default function Faq({ faq }: { faq: string }) {
         console.log("ClICKED");
         setIsOpen(!isOpen());
       }}
-      class="border border-[#4A051C] bg-[#F7D6E0]/20 p-4 rounded-2xl cursor-pointer"
+      class="border border-[#4A051C] bg-[#F7D6E0]/20 mb-4 p-4 rounded-2xl cursor-pointer"
     >
       <div class="flex justify-between items-center">
         <h3 class="text-black font-medium">{faq}</h3>

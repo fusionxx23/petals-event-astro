@@ -1,4 +1,10 @@
 ---
+import Navbar from "../components/Navbar.astro";
+import "@fontsource-variable/playfair-display";
+import "@fontsource/poppins/400.css";
+import "@fontsource/poppins/500.css";
+import "@fontsource/poppins/600.css";
+import Footer from "../components/Footer.astro";
 interface Props {
   a: string;
 }
@@ -13,7 +19,9 @@ const { a } = Astro.props;
     <meta name="generator" content={Astro.generator} />
     <title>{a}</title>
   </head>
-  <body>
+  <body class="font-poppins">
+    <Navbar />
     <slot />
+    <Footer />
   </body>
 </html>
