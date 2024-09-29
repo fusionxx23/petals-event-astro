@@ -1,0 +1,25 @@
+---
+import Faq from "./Faq.tsx";
+
+const faqs = [
+  "What types of flowers are in season?",
+  "What is the cost of the flowers and overall floral services?",
+  "Can you work with my wedding theme or color scheme?",
+  "How far in advance should I place my order?",
+];
+---
+
+<div class={`flex flex-col items-center text-center py-12 px-6 `} id="faq">
+  <div data-aos="fade-up" class="space-y-6">
+    <h1 class="text-black font-bold text-4xl">FAQs</h1>
+    <p class="text-black font-normal text-lg mt-2">
+      Give a quick introduction to your FAQs
+    </p>
+  </div>
+
+  <div class="w-full max-w-xl mt-6 space-y-8">
+    <div data-aos="fade-up" class="space-y-8">
+      {faqs.map((faq) => <Faq faq={faq} client:visible />)}
+    </div>
+  </div>
+</div>
